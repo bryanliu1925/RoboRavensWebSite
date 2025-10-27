@@ -1,9 +1,271 @@
 body {
-    background-color:  lightblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    margin: 0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #e36969, #ff0000);
+    color: white;
 }
 head {
     background-color: lightsalmon;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
+h1, h2, h3, p {
+    margin-top: 0;
+}
+header{
+    background-color: #333;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.topnav > ul{
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    display: flex;
+    gap:40px;
+    align-items:center;
+}
+.topnav a{
+    color: lightsalmon;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.topnav img{
+    width:50px;
+    height:50px;
+    border-radius:14px;
+}
+.topnav a:hover {
+    color: #f80d0d;
+    border-radius: 5px;
+}
+.dropdown {
+    position: relative; 
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: #333;
+    border: 1px solid #555;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: lightsalmon;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    background: #444;
+    color: #f80d0d;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+#intro{
+    background-color:lightsalmon;
+    color:white;
+    background: linear-gradient(-135deg, rgb(238, 103, 88), rgb(229, 183, 165), rgb(221, 84, 69));
+    text-align: center;
+    padding-bottom: 50px;
+}
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 241, 241);
+    color: black;
+    padding: 20px;
+    border-radius:12px;
+    padding:30px;
+    width:85%;
+    margin:0 auto;
+    margin-top:100px;
+    margin-bottom:100px;
+
+}
+#sponsorships {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 80vh;
+    color: white;
+    background:
+    linear-gradient(to right, rgba(255, 99, 71, 0.9), rgba(0, 0, 0, 0.4)),
+    url('images/lifu.JPG') center/cover no-repeat;
+    padding: 100px 10%;
+    overflow: hidden;
+    border-radius: 0;
+}
+footer {
+    background-color: #090000;
+    color: rgb(166, 8, 8);
+    text-align: center;
+    padding: 20px 0;
+    margin-top:0;
+    font-family:monospace;
+    font-size: 20px;
+    display: block;
+    align-items:center;
+    justify-content:center;
+    line-height: 2.5em;
+}
+.footer-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.other-footer-links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    color: lightsalmon;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: red;
+}
+.googleform {
+    max-width: 800px;   
+    margin: auto;      
+}
+
+.googleform iframe {
+    width: 100%;
+    height: 1000px;     
+    border: none;
+}
+.fade-in {
+  opacity: 0;           
+    transform: translateY(20px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.about-text{
+    margin-right: 20px;
+}
+.about-image img {
+    width: 300px; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(223, 32, 2, 0.921);
+}
+.italics{
+    font-style: italic;
+}
+.bold{
+    font-weight:bolder;
+}
+#pic1{
+    width:400px;
+    height:440px;
+    float:right;
+}
+#intro h1{
+    padding-top:40px;
+    font-size:100px;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.2em;
+}
+#intro h2{
+    font-size:40px;
+}
+#intro h3{
+    max-width:700px;
+    font-size: 30px;
+    margin:0 auto;
+    color:black;
+    padding-bottom: 20px;
+
+}
+#intro h4{
+    margin-top:0;
+    padding-bottom: 20px;
+}
+#about h2{
+    color:red;
+}
+.lifu {
+    max-width: 800px;
+}
+#sponsorships h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+#sponsorships p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-right:20px;
+}
+#sponsorships .button {
+    background-color: white;
+    color: #d62828;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+#sponsor-images{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 10px;
+}
+#sponsor-images img{
+    height:300px;
+    width:300px;
+    border-radius:14px;
+    border-width: 10px;
+    border-color: azure;
+}
+#a{
+    font-size:30px;
+}
+.center{
+    text-align: center;
+}
+.topnav a .logo{
+    display: inline-block;
+    transition: transform 600ms cubic-bezier(.2,.8,.2,1);
+    transform-origin: center center;
+}
+.topnav a:hover .logo,
+.topnav a:focus .logo{
+    transform: rotate(360deg);
+}
+
+
