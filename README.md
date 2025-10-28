@@ -1,1 +1,1 @@
-This is the GitHub repository of the Robo Ravens Website.
+Hi, this is my website :)
