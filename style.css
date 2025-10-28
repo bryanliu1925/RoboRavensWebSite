@@ -286,3 +286,8 @@ footer a {
 @keyframes blink {
     50% { border-color: transparent; }
 }
+#kaden{
+    height:400px;
+    width:300px;
+    object-fit:cover;
+}
